@@ -30,7 +30,7 @@ export class PlanetListComponent implements OnInit {
     splittedUrl.pop();
     const id = splittedUrl.pop();
 
-    const commands = ['./', id]; //Ruta
+    const commands = ['planets', id]; //Ruta
     const navigationExtras = {}
     console.log('navigating to: ', id);
 
