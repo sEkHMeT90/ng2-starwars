@@ -1,0 +1,13 @@
+<h1>Listado de planetas</h1>
+<ul>
+  <li *ngFor="let planet of planets">
+    <app-list-item
+      [planet] = "planet"
+      (onPlanetSelected)="goToPlanetDetail($event)">
+
+    </app-list-item>
+    <!--{{planet.name}} ({{planet.population | inhabitants}})-->
+  </li>
+</ul>
+
+<!-- <pre> {{planets|json}}</pre> -->

@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import {PlanetsModule} from "./planets/planets.module";
+import {RouterModule} from "@angular/router";
+
+import {routes} from "./app.routes";
 
 @NgModule({
   declarations: [
@@ -18,8 +22,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    CoreModule
-    // CoreModule.forRoot()
+    CoreModule.forRoot(),
+    PlanetsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
